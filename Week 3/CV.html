@@ -1,45 +1,124 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Basic CV</title>
-  </head>
-  <body>
-    <h1>Lê Xuân Khánh</h1>
-    <!-- Ảnh cá nhân -->
-    <img src="../Week 2/Anh-ex3/bear.jpg" alt="Ảnh cá nhân" style="width:150px;height:auto;border-radius:50%;margin-bottom:16px;">
-    <ol type="I">
-      <li>Thông tin cá nhân
-        <ul>
-          <li>Address: 12/N23, tổ dân phố 12, ngách 60 ngõ 445 Lạc Long Quân</li>
-          <li>Phone number: 0868280266</li>
-          <li>Email: xkhanhle228@gmail.com</li>
-        </ul>
-      </li>
-      <li>Introduction
-        <ul>
-          <li>I am a technology enthusiast, eager to learn and responsible in work.</li>
-          <li>I want to develop my career in the IT field.</li>
-        </ul>
-      </li>
-      <li>Experience
-        <ul>
-          <li>Java subject:Building Parking management system.</li>
-          <li>AI: Using CNN and CBIR to idetify fast food </li>
-        </ul>
-      </li>
-      <li>Education
-        <ul>
-          <li>Still studying in International school - VNUIS</li>
-        </ul>
-      </li>
-      <li>Skills
-        <ul>
-          <li>Programming language: Python</li>
-          <li>Teamworking</li>
-        </ul>
-      </li>
-    </ol>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Basic CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    img {
+      display: block;
+      margin: 0 auto 16px;
+      border-radius: 50%;
+      width: 150px;
+      height: auto;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    details {
+      margin-left: 20px;
+    }
+    iframe {
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lê Xuân Khánh</h1>
+  <img src="../Week 2/Anh-ex3/bear.jpg" alt="Ảnh cá nhân">
+
+  <section>
+    <h2>Thông tin cá nhân</h2>
+    <details open>
+      <summary>Chi tiết</summary>
+      <ul>
+        <li>Address: 12/N23, tổ dân phố 12, ngách 60 ngõ 445 Lạc Long Quân</li>
+        <li>Phone number: 0868280266</li>
+        <li>Email: xkhanhle228@gmail.com</li>
+      </ul>
+    </details>
+  </section>
+
+  <section>
+    <h2>Introduction</h2>
+    <details open>
+      <summary>Xem thêm</summary>
+      <ul>
+        <li>I am a technology enthusiast, eager to learn and responsible in work.</li>
+        <li>I want to develop my career in the IT field.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <details>
+      <summary>Các dự án</summary>
+      <ul>
+        <li>Java subject: Building Parking management system.</li>
+        <li>AI: Using CNN and CBIR to identify fast food.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <details>
+      <summary>Xem chi tiết</summary>
+      <ul>
+        <li>Still studying in International school - VNUIS</li>
+      </ul>
+    </details>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <details>
+      <summary>Chi tiết</summary>
+      <ul>
+        <li>Programming language: Python</li>
+        <li>Teamworking</li>
+      </ul>
+    </details>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <details open>
+      <summary>Xem dự án</summary>
+      <ul>
+        <li>
+          <strong>Parking Management System</strong> – Java  
+          <p>Ứng dụng quản lý bãi đỗ xe với các chức năng thêm xe, thanh toán, quản lý dữ liệu.</p>
+          <iframe width="560" height="315" src="https://youtu.be/u_05vOnk8cg?si=JBr_PlG2u4rEiw2S"
+            title="Demo Parking Project" frameborder="0" allowfullscreen></iframe>
+        </li>
+       <li>
+  <strong>Fast Food Recognition</strong> – AI (CNN + CBIR)  
+  <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
+  <p>
+    🔗 Xem project tại 
+    <a href="https://colab.research.google.com/drive/1XZicWQhOeluWELKGawxfaYXcGUYO8wS2" target="_blank">
+      Google Colab
+    </a>
+  </p>
+</li>
+
+      </ul>
+    </details>
+  </section>
+</body>
 </html>
