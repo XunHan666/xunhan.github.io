@@ -43,13 +43,19 @@ section.cv-section {
 
 .cv-section img.cv-avatar {
   display: block;
-  margin: 0 auto 20px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  border-radius: 50%; 
+  width: 180px;
+  height: 180px;
   object-fit: cover;
   border: 3px solid #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-section img.cv-avatar.ellipse {
+  border-radius: 50%
 }
 
 .cv-section iframe {
