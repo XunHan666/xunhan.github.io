@@ -4,44 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Basic CV</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-    img {
-      display: block;
-      margin: 0 auto 16px;
-      border-radius: 50%;
-      width: 150px;
-      height: auto;
-    }
-    section {
-      margin-bottom: 25px;
-    }
-    details {
-      margin-left: 20px;
-    }
-    iframe {
-      display: block;
-      margin: 10px auto;
-      border-radius: 8px;
-    }
-  </style>
+  <link rel="stylesheet" href="../Week 5/style.css">
+  <link rel="stylesheet" href="stylew3.css">
 </head>
 <body>
-  <h1>Lê Xuân Khánh</h1>
-  <img src="../week 4/bear.jpg" alt="Ảnh cá nhân">
+  <nav id="topmenu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#tutorials">Tutorials</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <section>
-    <h2>Thông tin cá nhân</h2>
+  <h1 style="text-align: center; margin-bottom: 10px; color: #1a5276; font-size: 2.5em; font-weight: 700; letter-spacing: 1px;">Lê Xuân Khánh</h1>
+  <img src="../week 4/bear.jpg" alt="Ảnh cá nhân" class="cv-avatar">
+
+  <section class="cv-section">
+    <p class="underline">Thông tin cá nhân</p>
     <details open>
       <summary>Chi tiết</summary>
       <ul>
@@ -52,8 +33,8 @@
     </details>
   </section>
 
-  <section>
-    <h2>Introduction</h2>
+  <section class="cv-section">
+    <p class="underline">Introduction</p>
     <details open>
       <summary>Xem thêm</summary>
       <ul>
@@ -63,8 +44,8 @@
     </details>
   </section>
 
-  <section>
-    <h2>Experience</h2>
+  <section class="cv-section">
+    <p class="underline">Experience</p>
     <details>
       <summary>Các dự án</summary>
       <ul>
@@ -74,8 +55,8 @@
     </details>
   </section>
 
-  <section>
-    <h2>Education</h2>
+  <section class="cv-section">
+    <p class="underline">Education</p>
     <details>
       <summary>Xem chi tiết</summary>
       <ul>
@@ -84,8 +65,8 @@
     </details>
   </section>
 
-  <section>
-    <h2>Skills</h2>
+  <section class="cv-section">
+    <p class="underline">Skills</p>
     <details>
       <summary>Chi tiết</summary>
       <ul>
@@ -95,32 +76,30 @@
     </details>
   </section>
 
-  <section>
-    <h2>Projects</h2>
+  <section class="cv-section">
+    <p class="underline">Projects</p>
     <details open>
       <summary>Xem dự án</summary>
       <ul>
-      <li>
-  <strong>Fast Food Recognition</strong> – AI (CNN + CBIR)  
-  <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/u_05vOnk8cg"
-    title="Demo AI Project"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</li>
-       <li>
-  <strong>Fast Food Recognition</strong> – AI (CNN + CBIR)  
-  <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
-  <p>
-    🔗 Xem project tại 
-    <a href="https://colab.research.google.com/drive/1XZicWQhOeluWELKGawxfaYXcGUYO8wS2" target="_blank">
-      Google Colab
-    </a>
-  </p>
-</li>
+        <li>
+          <strong style="color: #1a5276;">Fast Food Recognition</strong> – AI (CNN + CBIR)  
+          <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/u_05vOnk8cg"
+            title="Demo AI Project"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </li>
+        <li>
+          <strong style="color: #1a5276;">Fast Food Recognition</strong> – AI (CNN + CBIR)  
+          <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
+          <p>
+            🔗 Xem project tại 
+            <a href="https://colab.research.google.com/drive/1XZicWQhOeluWELKGawxfaYXcGUYO8wS2" target="_blank">Google Colab</a>
+          </p>
+        </li>
       </ul>
     </details>
   </section>
