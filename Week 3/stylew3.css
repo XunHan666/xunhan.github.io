@@ -41,7 +41,7 @@ section.cv-section {
   font-size: 1.1em;
 }
 
-.cv-section img.cv-avatar {
+img.cv-avatar {
   display: block;
   margin-left: auto;
   margin-right: auto;
