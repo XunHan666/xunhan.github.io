@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lê Xuân Khánh - CV</title>
+  <link rel="stylesheet" href="CV_contact.css">
+</head>
+<body>
+  <!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Tutorials</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Newsletter</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+
+  <h1 style="text-align: center; margin-bottom: 10px; color: #1a5276; font-size: 2.5em; font-weight: 700; letter-spacing: 1px;">Lê Xuân Khánh</h1>
+  <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+    <img src="../../week 4/bear.jpg" alt="Ảnh cá nhân" class="cv-avatar">
+
+  </div>
+
+  <section class="cv-section">
+    <p class="underline">Thông tin cá nhân</p>
+    <details open>
+      <summary>Chi tiết</summary>
+      <ul>
+        <li>Address: 12/N23, tổ dân phố 12, ngách 60 ngõ 445 Lạc Long Quân</li>
+        <li>Phone number: 0868280266</li>
+        <li>Email: xkhanhle228@gmail.com</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="cv-section" id="contact">
+    <p class="underline">Contact</p>
+    <form id="contactForm"></form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Nhập họ tên" required>
+    <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email" required>
+    <br>
+      <label>Gender:</label>
+      <div>
+        <label><input type="radio" name="gender" value="male"> Nam</label>
+        <label><input type="radio" name="gender" value="female"> Nữ</label>
+      </div>
+    <br>
+
+      <label>Interested topics:</label>
+      <div>
+        <label><input type="checkbox" name="topic" value="web"> Web Development</label>
+        <label><input type="checkbox" name="topic" value="ai"> Artificial Intelligence</label>
+        <label><input type="checkbox" name="topic" value="design"> Design</label>
+      </div>
+    <br>
+      <label for="subject">Contact Reason:</label>
+      <select id="subject" name="subject">
+        <option value="">-- Chọn lý do liên hệ --</option>
+        <option value="job">Tuyển dụng</option>
+        <option value="collab">Hợp tác dự án</option>
+        <option value="question">Hỏi đáp</option>
+      </select>
+
+      <input type="hidden" name="form-source" value="CV-page">
+    <br>
+      <label for="message">Message:</label>
+    <br>
+      <textarea id="message" name="message" rows="5" placeholder="Nhập nội dung liên hệ..." required></textarea>
+    <br>
+      <div style="margin-top: 10px;">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+
+    <p style="text-align left; margin-top:15px;">Hoặc gọi trực tiếp: <strong>0868 280 266</strong></p>
+  </section>
+
+  <section class="cv-section">
+    <p class="underline">Introduction</p>
+    <details open>
+      <summary>Xem thêm</summary>
+      <ul>
+        <li>Tôi là người đam mê công nghệ, ham học hỏi và có tinh thần trách nhiệm trong công việc.</li>
+        <li>Mong muốn phát triển sự nghiệp trong lĩnh vực CNTT.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="cv-section">
+    <p class="underline">Experience</p>
+    <details>
+      <summary>Các dự án</summary>
+      <ul>
+        <li>Java subject: Building Parking management system.</li>
+        <li>AI: Using CNN and CBIR to identify fast food.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="cv-section">
+    <p class="underline">Education</p>
+    <details>
+      <summary>Xem chi tiết</summary>
+      <ul>
+        <li>Still studying in International School - VNUIS</li>
+      </ul>
+    </details>
+  </section>
+
+  <section class="cv-section">
+    <p class="underline">Skills</p>
+    <details>
+      <summary>Chi tiết</summary>
+      <ul>
+        <li>Programming language: Python</li>
+        <li>Teamworking</li>
+      </ul>
+    </details>
+  </section>
+
+<section class="cv-section">
+  <p class="underline">Projects</p>
+  <details open>
+    <summary>Xem dự án</summary>
+    <ul>
+      <li>
+        <strong style="color: #1a5276;">Fast Food Recognition</strong> – AI (CNN + CBIR)  
+        <p>Mô hình nhận diện đồ ăn nhanh, hỗ trợ tìm kiếm ảnh theo nội dung.</p>
+
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/u_05vOnk8cg"
+          title="Demo AI Project"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+    <br>
+    <br>
+        <p style="text-align:left; margin-top: 10px;">
+          🔗 Xem project tại 
+          <a href="https://colab.research.google.com/drive/1XZicWQhOeluWELKGawxfaYXcGUYO8wS2" target="_blank">
+            Google Colab
+          </a>
+        </p>
+      </li>
+    </ul>
+  </details>
+</section>
+
+</body>
+</html>
