@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    
+    <style type="text/css">
+        /* Định dạng màu nền body [cite: 32-34] */
+        body {
+            background-color: #525252;
+        }
+        /* Định dạng khoảng cách container [cite: 35, 38] */
+        .container {
+            margin-top: 60px;
+        }
+        /* Định dạng chữ tiêu đề panel [cite: 36, 39-41] */
+        .txt {
+            color: #FFF;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #333; /* Thêm màu nền tối cho header panel cho đẹp hơn */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading txt">User Registration</div>
+                
+                <div class="panel-body">
+                    <form action="">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6">
+                                    <label for="firstname" class="hidden-sm">First name</label>
+                                    <input type="text" id="firstname" class="form-control" placeholder="First name"/>
+                                </div>
+                                <div class="col-md-12 col-sm-6" style="margin-top: 10px;"> <label for="lastname" class="hidden-sm">Last name</label>
+                                    <input type="text" id="lastname" class="form-control" placeholder="Last name"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                             <label for="email" class="hidden-sm">Email address</label>
+                             <input type="text" id="email" class="form-control" placeholder="Email address"/>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-6">
+                                    <label for="password" class="hidden-sm">Password</label>
+                                    <input type="password" id="password" class="form-control" placeholder="Input password" />
+                                </div>
+                                <div class="col-md-12 col-sm-6" style="margin-top: 10px;">
+                                    <label for="confirm" class="hidden-sm">Confirmation</label>
+                                    <input type="password" id="confirm" class="form-control" placeholder="Input confirm"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Register" class="btn btn-info btn-block"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
